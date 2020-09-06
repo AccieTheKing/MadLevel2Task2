@@ -9,11 +9,11 @@ import com.example.madlevel2task2.databinding.ItemQuestionBinding
 class QuestionAdapter(private val questions: List<Question>) :
     RecyclerView.Adapter<QuestionAdapter.ViewHolder>() {
 
-    inner class ViewHolder(itemView: View) {
+    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val binding = ItemQuestionBinding.bind(itemView)
 
         fun databind(question: Question) {
-            binding.textView.text = question.textValue
+            binding.txtViewQuestion.text = question.textValue
         }
     }
 
