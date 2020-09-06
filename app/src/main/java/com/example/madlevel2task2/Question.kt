@@ -1,6 +1,6 @@
 package com.example.madlevel2task2
 
-data class Question(val textValue: String) {
+data class Question(val textValue: String, val answer: Boolean) {
     companion object {
         val QUESTIONS_LIST: Array<String> = arrayOf(
             "A 'val' and 'var' are the same",
